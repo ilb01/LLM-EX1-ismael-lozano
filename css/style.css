@@ -18,6 +18,10 @@ body {
 
 header {
     position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
 }
 
 /* HEADER SUPERIOR */
@@ -218,7 +222,7 @@ main .productos {
 .productos .serie-top{
     position: absolute;
     top:550px;
-    z-index: 5;
+    z-index: 0;
     color: white;
 
     padding-top: 10px;
