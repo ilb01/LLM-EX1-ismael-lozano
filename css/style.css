@@ -16,13 +16,6 @@ body {
     font-family: Lato;
 }
 
-header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background-color: white;
-    z-index: 10;
-}
 
 /* HEADER SUPERIOR */
 header .superior {
@@ -41,6 +34,11 @@ header .medio {
     align-items: center;
     border-bottom: 2px solid rgb(218, 214, 214);
     padding: 10px 60px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
 }
 
 .medio .logo img {
@@ -206,6 +204,7 @@ main .productos {
     grid-template-columns: auto auto auto auto;
     grid-gap: 50px;
 }
+
 .productos img {
     width: 100%;
 }
@@ -218,25 +217,28 @@ main .productos {
     font-weight: lighter;
     font-size: 20px;
 }
+
 /* 50% */
-.productos .serie-top{
+.productos .serie-top {
     position: absolute;
-    top:550px;
+    top: 550px;
     z-index: 0;
     color: white;
 
     padding-top: 10px;
     text-align: center;
-    
+
     width: 60px;
     height: 40px;
     background-color: #FF8F9C;
     clip-path: polygon(0% 0%, 57% 0, 100% 50%, 63% 100%, 0% 100%);
 }
+
 /* ESTRELLAS */
-.estrellas{
+.estrellas {
     padding-top: 50px;
 }
+
 .estrellas .fa-solid {
     color: #F6A355;
 }
@@ -251,6 +253,7 @@ main .productos {
     justify-content: space-between;
     align-items: center;
 }
+
 .precio span {
     text-decoration: line-through;
 }
@@ -332,11 +335,13 @@ footer .footer {
         text-align: center;
         transition: all .5s;
     }
+
     #menu a {
         display: block;
         margin: 50px 0;
         font-size: 18px;
     }
+
     #menu a:hover, #menu a.active {
         background: none;
         color: white;
@@ -346,17 +351,21 @@ footer .footer {
     #check:checked~#menu {
         left: 0;
     }
-    .banner{
+
+    .banner {
         display: none;
     }
-    main .productos{
+
+    main .productos {
         display: grid;
-        grid-template-columns: auto ;
+        grid-template-columns: auto;
     }
-    .productos .serie-top{
-        top:300px;
+
+    .productos .serie-top {
+        top: 300px;
     }
-    footer{
+
+    footer {
         font-size: 10px;
     }
 }
